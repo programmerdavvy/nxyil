@@ -10,7 +10,7 @@ const DashboardAdvert = () =>{
     return(
         <>
         <div className=" mx-5 promptsHeaderContainer dashboardHeader" 
-        style={{height:'340%'} }
+        style={{height:'100%'} }
         > 
        <div className="d-flex justify-content-between">
 
@@ -36,7 +36,8 @@ const DashboardAdvert = () =>{
     </div>
         </div>
         <div className="advert">
-            <img src={AdvertImg} alt="advert" className="img-fluid"/>
+            <img src={AdvertImg} alt="advert" />
+            {/* width="100%" height="90%" */}
             </div>
        </div>
        
