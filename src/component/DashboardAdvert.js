@@ -36,8 +36,7 @@ const DashboardAdvert = () =>{
     </div>
         </div>
         <div className="advert">
-            <img src={AdvertImg} alt="advert" />
-            {/* width="100%" height="90%" */}
+            <img src={AdvertImg} alt="advert" width="100%" height="90%"/>
             </div>
        </div>
        
