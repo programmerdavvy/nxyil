@@ -51,7 +51,20 @@ const sliderText = {
     </div>
     {/* advert */}
     <div style={{paddingTop:'20px'}}> <DashboardAdvert/></div>
-    
+    {/* favourite */}
+    <div style={{paddingTop:'20px'}}>
+    <DashboardPromptSlider prompts={prompts} bgt={'All-time Favourites'} smt={'Our users most loved and saved prompts'}/>
+    </div>
+    {/* monthly */}
+    <div style={{paddingTop:'20px'}}>
+    <DashboardPromptSlider prompts={prompts} bgt={'Monthly Prompts'} smt={'Season-focused prompts of the month'}/>
+    </div>
+    {/* advert 2 */}
+    <div style={{paddingTop:'20px'}}> <DashboardAdvert/></div>
+    {/* Worth a Try Prompts */}
+    <div style={{paddingTop:'20px'}}>
+    <DashboardPromptSlider prompts={prompts} bgt={'Worth a Try Prompts'} smt={'Unique, crazy, but yet incredibly powerful prompts'}/>
+    </div>
     {/* footer */}
     <div style={{paddingTop:'20px'}}>
     <Footer/>
