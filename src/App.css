@@ -145,10 +145,16 @@ body{
 .active{
   color: blue !important;
 }
-.swiper .swiper-button-prev, .swiper-button-next{
-  color:gray;
-  padding:10px;
-  border: 2px solid black;
+.swiper .swiper-button-next{
+  color:rgb(203, 201, 201);
+  padding:30px;
+  border: 2px solid #eee;
+  border-radius: 50%; 
+}
+.swiper .swiper-button-prev{
+  color:rgb(203, 201, 201);
+  padding:30px;
+  border: 2px solid #eee;
   border-radius: 50%; 
 }
 .textdarklink{

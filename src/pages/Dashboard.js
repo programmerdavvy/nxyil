@@ -7,6 +7,7 @@ import DashboardPromptSlider from '../component/PromptSlider';
 import { useState } from 'react';
 import { request } from '../services/utilities';
 import { Spinner } from 'reactstrap';
+import DashboardAdvert from '../component/DashboardAdvert';
 
 function Dashboard() {
   const [prompts, setPrompts] = useState([]);
@@ -28,6 +29,10 @@ function Dashboard() {
 useEffect(()=>{
   fetchAllPrompts();
 },[]);
+
+const sliderText = {
+
+}
   return (
     <>
     
@@ -38,8 +43,15 @@ useEffect(()=>{
     <DashboardHeader/>
     </div>
     <div style={{paddingTop:'90px'}}>
-    <DashboardPromptSlider prompts={prompts}/>
+    <DashboardPromptSlider prompts={prompts} bgt={'Weekly Prompts'} smt={''}/>
     </div>
+    {/* hidden-gems */}
+    <div style={{paddingTop:'20px'}}>
+    <DashboardPromptSlider prompts={prompts} bgt={'Hidden-Gems'} smt={'Our hand-picked prompts with proven results'}/>
+    </div>
+    {/* advert */}
+    <div style={{paddingTop:'20px'}}> <DashboardAdvert/></div>
+    
     {/* footer */}
     <div style={{paddingTop:'20px'}}>
     <Footer/>
