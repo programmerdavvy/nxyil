@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { request } from '../services/utilities';
 import { Spinner } from 'reactstrap';
 import DashboardAdvert from '../component/DashboardAdvert';
+import DashboardAdvertTwo from "../component/DashboardAdvertTwo"
 
 function Dashboard() {
   const [prompts, setPrompts] = useState([]);
@@ -60,7 +61,7 @@ const sliderText = {
     <DashboardPromptSlider prompts={prompts} bgt={'Monthly Prompts'} smt={'Season-focused prompts of the month'}/>
     </div>
     {/* advert 2 */}
-    <div style={{paddingTop:'20px'}}> <DashboardAdvert/></div>
+    <div style={{paddingTop:'20px'}}> <DashboardAdvertTwo/></div>
     {/* Worth a Try Prompts */}
     <div style={{paddingTop:'20px'}}>
     <DashboardPromptSlider prompts={prompts} bgt={'Worth a Try Prompts'} smt={'Unique, crazy, but yet incredibly powerful prompts'}/>
