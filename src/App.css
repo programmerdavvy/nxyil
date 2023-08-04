@@ -151,6 +151,11 @@ body{
   border: 2px solid #eee;
   border-radius: 50%; 
 }
+
+.swiper-wrapper, .swiper, .swiper-slide {
+  /* position: initial !important; */
+
+}
 .swiper .swiper-button-prev{
   color:rgb(203, 201, 201);
   padding:30px;
@@ -166,6 +171,13 @@ body{
 .dashboardHeader {
   background-color: #39379e;
   background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+.dashboardHeader1 {
+  background-image: linear-gradient(45deg,#6927da,#175cd3);  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem;
@@ -450,6 +462,10 @@ textarea.w-input, textarea.w-select {
   padding-right: 3rem!important;
   padding-left: 3rem!important;
 }
+.dashboardContainer{
+  margin-right: 3rem!important;
+  margin-left: 3rem!important;
+}
 .promptsPackCard{
   padding-right: 3rem!important;
   padding-left: 3rem!important;
@@ -504,6 +520,9 @@ textarea.w-input, textarea.w-select {
 .leftPackTitle{
   width: 90%;
 }
+.w-30{
+  width: 30%!important;
+}
 @media only screen and (max-width: 1024px) {
   .filterSide{
     padding-right: 1.5rem!important;
@@ -511,6 +530,9 @@ textarea.w-input, textarea.w-select {
   }
   #searchwfsm {
     width: 50%;
+}
+.w-30{
+  width: 30%!important;
 }
 }
 
@@ -541,6 +563,10 @@ textarea.w-input, textarea.w-select {
 .promptsHeaderContainer{
   padding-right: 1.5rem!important;
     padding-left: 1.5rem!important;
+}
+.dashboardContainer{
+  margin-right: 1.1rem!important;
+    margin-left: 1.1rem!important;
 }
 .promptsPackCard{
   padding-right: 1rem!important;
@@ -579,5 +605,7 @@ textarea.w-input, textarea.w-select {
 .small-screen{
   display: block;
 }
-
+.w-30{
+  width: 100%!important;
+}
 }

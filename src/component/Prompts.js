@@ -320,7 +320,7 @@ function Prompts() {
                         {filteredPrompts.length > 1
                           ? filteredPrompts.length
                           : prompts.length}{' '}
-                        <TasksOverlay />
+                        <TasksOverlay  main={'Tasks'} submain={'Each Nyxil Prompt card includes 1-5 prompts inside.'}/>
                       </div>
                     </div>
                   </Col>

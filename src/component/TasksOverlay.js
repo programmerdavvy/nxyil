@@ -1,15 +1,14 @@
 import {UncontrolledTooltip } from 'reactstrap'
 
-function TasksOverlay() {
-
-
+function TasksOverlay({main,submain}) {
   return (
    <>
         <span  id='positionTop'>
-        Tasks
+        {main}
         </span>
         <UncontrolledTooltip style={{backgroundColor:"#fff",color:'black',padding:'10px'}} placement='top' target='positionTop'>
-        Each Nyxil Prompt card includes 1-5 prompts inside.
+          {submain}
+        
         </UncontrolledTooltip>
    </>
   );

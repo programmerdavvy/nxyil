@@ -9,23 +9,23 @@ const DashboardAdvert = () =>{
 
     return(
         <>
-        <div className=" mx-5 promptsHeaderContainer dashboardHeader" 
+        <div className="dashboardContainer promptsHeaderContainer dashboardHeader1" 
         style={{height:'100%'} }
         > 
-       <div className="d-flex justify-content-between">
-
-        <div className="text">
-    <h1 className="text-white fw-600" style={{fontSize:"50px"}}>Unlock All 10,000+ Prompts</h1>
-    <p className="text-white pt-3">The #1 Most Advanced ChatGPT Prompt Bundle On The Planet</p>
+       <Row className=" justify-content-between">
+<Col xl={6} sm={12}>
+<div className="text">
+    <h1 className="text-white fw-600 promptsHeaderBigText fw-600">Unlock All 10,000+ Prompts</h1>
+    <p className="text-white pt-3  fs-5">The #1 Most Advanced ChatGPT Prompt Bundle On The Planet</p>
     <div>
     <button 
-                        className='btn '
+                        className='btn w-30 mb-5'
                         style={{
-                            width:"30%",
                           border: '1px solid #FEC84B',
                           backgroundColor: '#FEC84B',
                           borderRadius: '10px',
                           fontWeight: '600',
+                          color:"#3e3b39"
                         }}
                       >
                         Get Nyxil Max
@@ -35,10 +35,14 @@ const DashboardAdvert = () =>{
                       </button>
     </div>
         </div>
+</Col>
+        <Col  xl={6} sm={12}> 
         <div className="advert">
             <img src={AdvertImg} alt="advert" width="100%" height="90%"/>
             </div>
-       </div>
+       
+        </Col>
+       </Row>
        
         </div>
         </>

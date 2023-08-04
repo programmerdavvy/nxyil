@@ -14,20 +14,28 @@ import { Row ,Col} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Bookmark } from 'react-feather';
 
- function DashboardSlider({prompts,start,end}) {
+ function DashboardSliderTwo({prompts,start,end}) {
     const handleSavePrompts= ()=>{
 
     }
     const slidingPrompts = prompts && [...prompts].slice(start,end).map((e,i)=>{
         return(
             <SwiperSlide className='col-sm-12 col-md-6 col-xl-4 w-30'> 
-            <div className='p-4 mb-3 mt-4' style={{border:'1px solid #eee',height:'90%',  background:'#fff', borderRadius:'12px'}}>
+            <div className='p-4 mb-3 mt-4' style={{border:`1px solid ${e.colorcode}`,height:'90%',  background:'#fff', borderRadius:'12px'}}>
             <Link 
-            // to='#'
-                 to={`/prompt/${e.category.toLocaleLowerCase()}/${e.topic.toLocaleLowerCase().split(" ").join("-")}/${e.description.toLocaleLowerCase().split(" ").join("-")}`
+              //  to='#'
+                to={`/prompt/${e.category.toLocaleLowerCase()}/${e.topic.toLocaleLowerCase().split(" ").join("-")}/${e.description.toLocaleLowerCase().split(" ").join("-")}`
                 } 
                  className='text-decoration-none text-light-emphasis'>
+                
+                <div>
                 <h2 dangerouslySetInnerHTML={{__html:e.emojis }}></h2>
+                <div>
+                  <span>
+
+                  </span>
+                </div>
+                </div>
                  <h5 className='text-capitalize'> {e.topic}</h5>                          
               <div>
                 <p className='fs-6 text-light-emphasis'> {e.description.slice(0, 90)}...</p>
@@ -56,4 +64,4 @@ import { Bookmark } from 'react-feather';
     </Row>
   );
 }
-export default DashboardSlider;
+export default DashboardSliderTwo;

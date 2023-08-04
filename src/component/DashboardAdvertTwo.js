@@ -9,13 +9,13 @@ const DashboardAdvert = () =>{
 
     return(
         <>
-        <div className=" mx-5 promptsHeaderContainer dashboardHeader2" 
+        <div className="dashboardContainer promptsHeaderContainer dashboardHeader2" 
         style={{height:'100%'} }
         > 
-       <div className="d-flex justify-content-between">
-
-        <div className="text">
-          <div>
+       <Row className=" justify-content-between">
+<Col  xl={6} sm={12}>
+<div className="text">
+          <div className="mb-3">
           <span
                       className='mx-2 px-3'
                       style={{
@@ -28,7 +28,7 @@ const DashboardAdvert = () =>{
                       New
                     </span>
           </div>
-    <h1 className="text-white fw-600" style={{fontSize:"50px"}}>Automate Work with Sintra Bots</h1>
+    <h1 className="text-white fw-600 promptsHeaderBigText">Automate Work with Sintra Bots</h1>
     <div>
     <div className='mt-4'>
     <svg xmlns="http://www.w3.org/2000/svg"  color="white" width="5%" height="5%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
@@ -58,28 +58,32 @@ const DashboardAdvert = () =>{
         </div>
     </div>
     <div>
-    <button 
-                        className='btn mt-4'
+        <Link to='/bots' className="text-decoration-none text-dark">
+        <button 
+                        className='btn mt-4 w-30'
                         style={{
-                            width:"30%",
                           border: '1px solid #FEC84B',
                           backgroundColor: '#FEC84B',
                           borderRadius: '10px',
                           fontWeight: '600',
                         }}
                       >
-                        View Nyxil Bots
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="10%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+                        View Nyxil Bots 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15%" height="20%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
 <path d="M5.83301 14.1668L14.1663 5.8335M14.1663 5.8335H5.83301M14.1663 5.8335V14.1668" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-                      </button>
+         </button>
+        </Link>
     </div>
         </div>
-        <div className="advert">
+</Col>
+<Col  xl={6} sm={12}>
+      <div className="advert">
             <img src={AdvertImg} alt="advert" className="img-fluid"/>
             </div>
-       </div>
-       
+</Col>
+         
+        </Row>
         </div>
         </>
     )

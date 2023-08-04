@@ -77,11 +77,11 @@ const Navbarmenu = () => {
               <Nav>
                 <div className='pt-2'>
                   <Link
-                    to='/prompts'
-                    className='text-decoration-none  text-light-emphasis  fs-6'
+                    to='/dashboard'
+                    className='text-decoration-none fs-6' style={{color:'#1744b5'}}
                   >
                     {' '}
-                    Prompts{' '}
+                    Dashboard{' '}
                     <span
                       className='mx-2 px-3'
                       style={{
@@ -89,6 +89,7 @@ const Navbarmenu = () => {
                         padding: '5px',
                         fontSize: '10px',
                         borderRadius: '15px',
+                        color:"#6fb797"
                       }}
                     >
                       New

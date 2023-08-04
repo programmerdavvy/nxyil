@@ -2,26 +2,26 @@ import { ArrowRight } from "react-feather";
 import { Link } from "react-router-dom";
 import DashboardSlider from "./DashboardSlider";
 
-function PromtpSlider({prompts,bgt,smt}){
+function PromtpSlider({prompts,bgt,smt,start,end}){
 
     return(
         <>
-        <div className="p-5">
+        <div className="promptsHeaderContainer pb-5">
         <div className="d-flex justify-content-between">
           <div> 
-             <h2 className="" style={{fontWeight:'700'}}>
+             <h1 className="promptsHeaderBigText" style={{fontWeight:'700'}}>
             {bgt}
-            </h2>
+            </h1>
             <p className="pt-4 text-light-emphasis fs-5">{smt}</p>
             </div>
-            <Link to="/add-ons" className="text-decoration-none text-light-emphasis">
+            <Link to="/prompts" className="text-decoration-none text-light-emphasis loginleftside">
                 <div className="all-prompts bg-white fw-600 p-2 text-center rounded" style={{width:'150px',fontSize:'1.1rem',border:'1px solid #dde1e5'}}>
                      All Prompts               
                 </div>
-                </Link>
+            </Link>
         </div>
         <div className="">
-       <DashboardSlider prompts={prompts}/>
+       <DashboardSlider prompts={prompts} start={start} end={end}/>
         </div>
         </div>
         </>
